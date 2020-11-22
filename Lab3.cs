@@ -10,8 +10,8 @@ namespace MetodyObliczeniowe
         public static void Lagrange()
         {
             //Tablice x oraz y.
-            double[] xArray = { 1, 2, 3, 4};
-            double[] yArray = { 3, 1, -1, 2};
+            double[] xArray = { 1.27, 1.52, 1.77, 2.02, 2.27, 2.52, 2.77, 3.02, 3.27, 3.52, 3.77, 4.02 };
+            double[] yArray = { 5.24229, 4.87329, 4.53329, 4.21893, 3.95735, 3.86962, 3.40313, 3.16658, 2.94454, 2.73548, 1, 0};
 
             //Końcowy wielomian.
             Polynomial result = new Polynomial(0);
@@ -40,8 +40,8 @@ namespace MetodyObliczeniowe
         public static void Newton()
         {
             //Tablice x oraz y.
-            double[] xArray = { 1, 1.5, 2, 2.5 };
-            double[] yArray = { 2, 2.5, 3.5, 4 };
+            double[] xArray = { 1.27, 1.52, 1.77, 2.02, 2.27, 2.52, 2.77, 3.02, 3.27, 3.52, 3.77, 4.02 };
+            double[] yArray = { 5.24229, 4.87329, 4.53329, 4.21893, 3.95735, 3.86962, 3.40313, 3.16658, 2.94454, 2.73548, 1, 0 };
 
             //Obliczenie odległości między punktami.
             double h = xArray[1]-xArray[0];

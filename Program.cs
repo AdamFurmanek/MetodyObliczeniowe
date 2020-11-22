@@ -6,8 +6,7 @@ namespace MetodyObliczeniowe
     {
         static void Main(string[] args)
         {
-            Lab3.Newton();
-
+            Lab4.MNK();
         }
 
     }
