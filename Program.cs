@@ -6,7 +6,7 @@ namespace MetodyObliczeniowe
     {
         static void Main(string[] args)
         {
-            Lab4.MNK();
+            Lab5.Taylor();
         }
 
     }
