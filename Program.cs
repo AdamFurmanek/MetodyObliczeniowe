@@ -6,7 +6,7 @@ namespace MetodyObliczeniowe
     {
         static void Main(string[] args)
         {
-            Lab6.Gauss();
+            Lab7.Bisection();
         }
 
     }

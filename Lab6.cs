@@ -76,5 +76,95 @@ namespace MetodyObliczeniowe
             }
 
         }
+
+        public static void Cramer()
+        {
+            double[,] factorTab = { { 7.5, 9, 3 }, { 15, 3, 4 }, { 30, 6, 6 } };
+            double[] freeTab = { 9.5, 5.5, 4.5 };
+            int n = (int)Math.Sqrt(factorTab.Length);
+
+            double W = Sarrus(factorTab);
+
+            for (int i = 0; i < n; i++)
+            {
+                double[,] newTab = new double[n,n];
+                for (int j = 0; j < n; j++)
+                    for (int k = 0; k < n; k++)
+                        newTab[j, k] = factorTab[j, k];
+                for (int j = 0; j < n; j++)
+                    newTab[j, i] = freeTab[j];
+
+                Console.WriteLine("x"+(i+1)+" = "+(Sarrus(newTab)/W)+"\n");
+            }
+
+        }
+
+        public static double Sarrus(double[,] tab)
+        {
+            int n = (int)Math.Sqrt(tab.Length);
+
+            double[] positiveProduct = new double[n];
+            double[] negativeProduct = new double[n];
+
+
+            for (int i = 0; i < n; i++)
+            {
+                positiveProduct[i] = 1;
+                for (int j = 0; j < n; j++)
+                {
+                    int k = i + j;
+                    if (k >= n)
+                        k = k - 3;
+                    positiveProduct[i] = positiveProduct[i] * tab[k, j];
+                    Console.Write(tab[k, j]);
+                    if (j != n - 1)
+                        Console.Write("*");
+                }
+                if(i != n - 1)
+                    Console.Write(" + ");
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(" - ");
+                negativeProduct[i] = 1;
+                for (int j = n - 1; j >= 0; j--)
+                {
+                    int k = i - j - 1;
+                    if (k < 0 )
+                        k = k + n;
+                    negativeProduct[i] = negativeProduct[i] * tab[k, j];
+                    Console.Write(tab[k, j]);
+                    if (j != 0)
+                        Console.Write("*");
+                }
+            }
+
+            Console.Write(" = \n = ");
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(positiveProduct[i]);
+                if (i != n - 1)
+                    Console.Write(" + ");
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(" - ");
+                Console.Write(negativeProduct[i]);
+            }
+
+            for (int i = 1; i < n; i++)
+            {
+                positiveProduct[0] += positiveProduct[i];
+                negativeProduct[0] += negativeProduct[i];
+            }
+
+            Console.Write(" = \n = " + positiveProduct[0] + " - " + negativeProduct[0] + " = " + (positiveProduct[0] - negativeProduct[0]) + "\n");
+
+
+            return (positiveProduct[0] - negativeProduct[0]);
+        }
     }
 }
