@@ -6,7 +6,8 @@ namespace MetodyObliczeniowe
     {
         static void Main(string[] args)
         {
-            Lab7.Bisection();
+            Lab8.Euler();
+            //Lab8.RK4();
         }
 
     }
