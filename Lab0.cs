@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MetodyObliczeniowe
 {
@@ -24,5 +22,7 @@ namespace MetodyObliczeniowe
 
             Console.WriteLine(b);
         }
+
+
     }
 }

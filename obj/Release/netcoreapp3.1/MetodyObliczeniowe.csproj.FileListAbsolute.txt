@@ -1,0 +1,13 @@
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\bin\Release\netcoreapp3.1\MetodyObliczeniowe.exe
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\bin\Release\netcoreapp3.1\MetodyObliczeniowe.deps.json
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\bin\Release\netcoreapp3.1\MetodyObliczeniowe.runtimeconfig.json
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\bin\Release\netcoreapp3.1\MetodyObliczeniowe.runtimeconfig.dev.json
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\bin\Release\netcoreapp3.1\MetodyObliczeniowe.dll
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\bin\Release\netcoreapp3.1\MetodyObliczeniowe.pdb
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\obj\Release\netcoreapp3.1\MetodyObliczeniowe.AssemblyInfoInputs.cache
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\obj\Release\netcoreapp3.1\MetodyObliczeniowe.AssemblyInfo.cs
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\obj\Release\netcoreapp3.1\MetodyObliczeniowe.csproj.CoreCompileInputs.cache
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\obj\Release\netcoreapp3.1\MetodyObliczeniowe.dll
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\obj\Release\netcoreapp3.1\MetodyObliczeniowe.pdb
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\obj\Release\netcoreapp3.1\MetodyObliczeniowe.genruntimeconfig.cache
+C:\Dev\Microsoft Visual Studio\workspace\MetodyObliczeniowe\obj\Release\netcoreapp3.1\MetodyObliczeniowe.csprojAssemblyReference.cache

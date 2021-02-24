@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MetodyObliczeniowe
 {
@@ -8,16 +6,16 @@ namespace MetodyObliczeniowe
     {
         static double Function(double x, double y)
         {
-            return 0.2 * x * x + y * y;
+            return x * x * 0.2 + y * y;
         }
 
         public static void Euler()
         {
             double a = 0;
-            double b = 0.6;
+            double b = 1;
             double h = 0.1;
             double x = a;
-            double y = 1;
+            double y = 0.8;
             double deltaY = 0;
 
             int length = (int)Math.Round((b / h),2)+1;
